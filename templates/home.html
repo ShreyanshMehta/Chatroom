@@ -7,10 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/home.css' %}">
 </head>
 
 <body>
+    <div class="btn-box">
+        <button class="div-btn" id="create-btn">Create Room</button>
+        <button class="div-btn" id="join-btn">Join Room</button>
+    </div>
 </body>
+
+<script src="{% static 'scripts/home.js' %}"></script>
 
 </html>
