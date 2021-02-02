@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    background-image: url("/static/images/bg6.jpg");
+    background-image: url("/static/images/bg5.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100%;
-    width: 75%;
+    width: 100%;
     margin: auto;
 }
 
@@ -27,16 +27,17 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .btn-box button {
-    background-color: black;
-    opacity: 0.8;
-    color: #1C8D73;
+    background-color: #108b77;
+    color: black;
     font-size: 25px;
     padding: 10px 15px;
     border-radius: 30px;
-    border: 2px solid #1C8D73;
+    font-weight: bold;
+    border: 2px solid #12a381;
 }
 
 .btn-box button:hover {
@@ -44,5 +45,72 @@ body {
     background-color: black;
     opacity: 1;
     color: #12a381;
-    box-shadow: 0 0 25px 1.5px #1C8D73;
+    border: 2px solid black;
+    box-shadow: 0 0 20px 1.5px #12a381;
+}
+
+.logo {
+    color: white;
+    font-size: 50px;
+}
+
+#bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    color: black;
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #2f25a0;
+    width: 60%;
+    height: 45%;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.modal-content input {
+    width: 50%;
+    color: #000;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#submit-btn {
+    width: 30%;
+    border: none;
+    background-color: #1eb151;
+    color: white;
+    border-radius: 27px;
+}
+
+#submit-btn:hover {
+    border: none;
+    background-color: #188b41;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 6px;
+    right: 14px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close:hover {
+    font-weight: bold;
 }

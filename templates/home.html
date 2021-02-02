@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="#" />
     <link rel="stylesheet" type="text/css" href="{% static 'styles/home.css' %}">
 </head>
 
@@ -17,6 +18,14 @@
     <div class="btn-box">
         <button class="div-btn" id="create-btn">Create Room</button>
         <button class="div-btn" id="join-btn">Join Room</button>
+    </div>
+    <div id="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <div class="logo">ChatRoom</div>
+            <input type="text" placeholder="Room ID">
+            <input id="submit-btn" type="submit" value="Join Meeting">
+        </div>
     </div>
 </body>
 
